@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="./style.css">
+
+<head>
+    <title>Vjezba 3</title>
+</head>
+
+<body>
+    <form>
+        <h1> REGISTRACIJA </h1>
+        <table>
+            <tr>
+                <td>
+                 Korisnicko ime 
+                </td>   
+            </tr>
+            <tr>
+                <td>
+                   <input id="username" type="text" placeholder="supername" />  
+                    <label class="errorMessage" id="errorUsername"></label>
+                </td> 
+            </tr>
+            <tr>
+                <td>
+                 E-mail   
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <input id="email" type="email" placeholder="myemail@mail.com"/> 
+                    <label class="errorMessage" id="errorEmail"></label>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                 Lozinka 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="password" type="password" placeholder="eg. Two4OneS" />
+                    <label class="errorMessage" id="errorPassword"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                 Potvrda lozinka 
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <input id="passwordAgain" type="password" placeholder="eg. Two4OneS" /> 
+                    <label class="errorMessage" id="errorPasswordAgain"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Strucna sprema
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <select id="strucna">
+                    <option></option>
+                    <option>SSS</option>
+                    <option>VSS</option>
+                    <option>VŠS</option>
+                </select> 
+                <label class="errorMessage" id="errorSelect"></label>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <div class="buttons">
+                    <button id="reset" onclick="clear()">Reset</button>
+                    <button id="submit" type ="submit" onclick="validate()">Sacuvaj</button>
+               </div>
+             </td>
+            
+            </tr>
+        </table>
+    </form>    
+
+</body>
+<script src="script.js"></script>
+</html>
